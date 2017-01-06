@@ -1,0 +1,75 @@
+/* General styles */
+
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	font-family: Roboto Slab, sans-serif;
+}
+
+/* Main menu styles */
+
+#main-nav {
+	background-color: transparent;
+	border: 1px solid transparent;
+	transition: all 0.3s;
+	z-index: 5;
+}
+
+#main-nav  ul li a {
+	color: #fff;
+	font-family: Montserrat-Regular, sans-serif;
+	text-decoration: none;
+}
+
+#main-nav ul li a:hover {
+	color: #0ed8d6;
+}
+
+#main-nav.scroll {
+	background-color: #fff;
+}
+
+#main-nav.scroll ul li a {
+	color: #0ed8d6;
+}
+
+#main-nav.scroll ul li a:hover {
+	color: #291f1a;
+}
+
+/* Main header styles */
+
+#main_header {
+	background-image: url(../images/header/pictures_on_the_wall.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+	height: 100vh;
+	position: relative;
+}
+
+#main_header .main_header_content {
+	text-align: center;
+	top: 50%;
+	transform: translateY(-50%);
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+#main_header .main_header_content > h1 {
+	font-family: Droid Serif, sans-serif;
+	font-size: 4em;
+	font-weight: 200;
+}
+
+#main_header .main_header_content > h2 {
+	font-family: Droid Serif, sans-serif;
+	font-style: italic;
+	font-size: 2em;
+	font-weight: 200;
+}
