@@ -1,0 +1,21 @@
+/* Responsive Styles Start */
+
+@media all and (max-width: 768px){
+
+	/* Main Menu Responsive */
+	#main-nav {
+	background-color: #fff;
+	}
+	
+	div.navbar-header .navbar-brand {
+	color: inherit;
+	}
+
+	#main-nav ul li a {
+		color: #1ac056;
+	}
+
+	#main-nav ul li a:hover {
+		color: #291f1a;
+	}
+}
