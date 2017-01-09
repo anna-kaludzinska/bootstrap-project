@@ -5,7 +5,7 @@
 }
 
 html, body {
-	font-family: Roboto Slab, sans-serif;
+	font-family: Roboto Slab, serif;
 }
 
 /* Main menu styles */
@@ -17,9 +17,15 @@ html, body {
 	z-index: 5;
 }
 
+.navbar-brand {
+	color: #fff;
+	font-style: italic;
+	font-family: Montserrat-Regular, serif;
+}
+
 #main-nav  ul li a {
 	color: #fff;
-	font-family: Montserrat-Regular, sans-serif;
+	font-family: Montserrat-Regular, serif;
 	text-decoration: none;
 }
 
@@ -61,15 +67,29 @@ html, body {
 	margin: auto;
 }
 
-#main_header .main_header_content > h1 {
-	font-family: Droid Serif, sans-serif;
+#main_header .main_header_content h1 {
+	font-family: Droid Serif, serif;
 	font-size: 4em;
 	font-weight: 200;
 }
 
-#main_header .main_header_content > h2 {
-	font-family: Droid Serif, sans-serif;
+#main_header .main_header_content h2 {
+	font-family: Droid Serif, serif;
 	font-style: italic;
 	font-size: 2em;
 	font-weight: 200;
+}
+
+#button-container {
+	padding-top: 40px;
+}
+
+#main_header .main_header_content #view-more {
+	font-family: Montserrat-Regular, serif;
+	font-weight: 600;
+	width: 180px;
+	height: 50px;
+	background-color: #0ed8d6;
+	color: #fff;
+	font-size: 1em;
 }
