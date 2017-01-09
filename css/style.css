@@ -17,10 +17,12 @@ html, body {
 	z-index: 5;
 }
 
-.navbar-brand {
-	color: #fff;
+
+div.navbar-header .navbar-brand {
+	color: white;
 	font-style: italic;
 	font-family: Montserrat-Regular, serif;
+	font-size: 1.5em;
 }
 
 #main-nav  ul li a {
@@ -48,7 +50,7 @@ html, body {
 /* Main header styles */
 
 #main_header {
-	background-image: url(../images/header/pictures_on_the_wall.jpg);
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/header/pictures_on_the_wall.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -56,6 +58,8 @@ html, body {
 	height: 100vh;
 	position: relative;
 }
+
+
 
 #main_header .main_header_content {
 	text-align: center;
