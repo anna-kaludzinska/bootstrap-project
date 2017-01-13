@@ -4,18 +4,35 @@
 
 	/* Main Menu Responsive */
 	#main-nav {
-	background-color: #fff;
+	background-color: rgba(14,216,214, 0.9);
 	}
 	
 	div.navbar-header .navbar-brand {
-	color: inherit;
+	color: #fff;
 	}
 
 	#main-nav ul li a {
-		color: #1ac056;
+		color: #fff;
 	}
 
 	#main-nav ul li a:hover {
 		color: #291f1a;
 	}
+}
+
+@media all and (max-width: 480px){
+	
+/*	Header Styles Responsive */
+	
+    #main_header .main_header_content > h1 {
+		font-size: 2em;
+	}
+	
+	#main_header .main_header_content > h2 {
+		font-size: 1.5em;
+	}
+    
+    #main_header .main_header_content button {
+        
+    }
 }

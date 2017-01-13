@@ -6,7 +6,26 @@
 
 html, body {
 	font-family: Roboto Slab, serif;
+    color: #777777;
 }
+
+h2, h3, h4, h5, h6 {
+    text-align: center;
+    font-family: Montserrat-Regular, serif;
+    font-weight: 600;
+    color: #333333;
+}
+
+section {
+    padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+/*img {
+    height: 200px;
+	width: 400px;
+}
+*/
 
 /* Main menu styles */
 
@@ -17,15 +36,14 @@ html, body {
 	z-index: 5;
 }
 
-
 div.navbar-header .navbar-brand {
 	color: #fff;
 	font-style: italic;
-	font-family: Montserrat-Regular, serif;
+	font-family: Droid Serif, serif;
 	font-size: 1.5em;
 }
 
-#main-nav  ul li a {
+#main-nav ul li a {
 	color: #fff;
 	font-family: Montserrat-Regular, serif;
 	text-decoration: none;
@@ -36,11 +54,11 @@ div.navbar-header .navbar-brand {
 }
 
 #main-nav.scroll {
-	background-color: #fff;
+	background-color: rgba(14,216,214, 0.9);
 }
 
 #main-nav.scroll ul li a {
-	color: #0ed8d6;
+	color: #fff;
 }
 
 #main-nav.scroll ul li a:hover {
@@ -59,8 +77,6 @@ div.navbar-header .navbar-brand {
 	position: relative;
 }
 
-
-
 #main_header .main_header_content {
 	text-align: center;
 	top: 50%;
@@ -72,14 +88,15 @@ div.navbar-header .navbar-brand {
 }
 
 #main_header .main_header_content h1 {
-	font-family: Droid Serif, serif;
 	font-size: 4em;
-	font-weight: 200;
+    font-family: Montserrat-Regular, serif;
+    font-weight: 600;
 }
 
 #main_header .main_header_content h2 {
 	font-family: Droid Serif, serif;
 	font-style: italic;
+    color: #fff;
 	font-size: 2em;
 	font-weight: 200;
 }
@@ -88,7 +105,7 @@ div.navbar-header .navbar-brand {
 	padding-top: 40px;
 }
 
-#main_header .main_header_content #view-more {
+.button-inner {
 	font-family: Montserrat-Regular, serif;
 	font-weight: 600;
 	width: 180px;
@@ -96,4 +113,298 @@ div.navbar-header .navbar-brand {
 	background-color: #0ed8d6;
 	color: #fff;
 	font-size: 1em;
+}
+
+/* Services section styles */
+
+#services div h4 {
+    font-style: italic;
+	font-family: Droid Serif, serif;
+    font-weight: 200;
+}
+
+#services-content {
+    padding-top: 50px;
+}
+
+.services-txt {
+    text-align: center;
+}
+
+.fa {
+    background: #0ed8d6;
+    color: #fff;
+    font-size: 2.5em;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    padding: 30px;
+}
+
+/* Portfolio section styles */
+
+#portfolio {
+    background-color: #f7f7f7;
+}
+
+#portfolio div h4 {
+    font-style: italic;
+	font-family: Droid Serif, serif;
+    font-weight: 200;
+}
+
+.portfolio-images {
+    font-size: 0;
+    width: 100%;
+    padding-top: 40px; 
+}
+
+.box-img div {
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 200px;
+	width: 100%;
+	display: inline-block;
+	position: relative;
+    background-position: 50% 90%;
+}
+
+#image1 {
+    background-image: url(../images/portfolio/chestnut_on_bracket.jpg);
+}
+
+#image2 {
+    background-image: url(../images/portfolio/typing_on_laptop.jpg);
+}
+
+#image3 {
+    background-image: url(../images/portfolio/child_with_blue_paint.jpg);
+}
+
+#image4 {
+    background-image: url(../images/portfolio/chaotic_paint.jpg);
+}
+
+#image5 {
+    background-image: url(../images/portfolio/house_with_blue_doors.jpg);
+}
+
+#image6 {
+    background-image: url(../images/portfolio/box_of_cookies.jpg);
+}
+
+.mask {
+	background-color: rgba(14,216,214, 0.6);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+}
+	
+.mask:hover {
+	transition: 2s;
+	opacity: 1;
+}
+
+.fa-plus {
+    background: transparent;
+    font-size: 40px;
+}
+
+.plus-icon a {
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.box-img div.desc {
+    height: auto;
+    background-color: #fff;
+    margin-bottom: 30px;
+}
+
+.box-img p {
+    font-size: 14px;
+    font-family: Droid Serif, serif;
+	font-style: italic;
+    text-align: center;
+}
+
+/* Team section styles */
+
+#team h4 {
+    font-style: italic;
+	font-family: Droid Serif, serif;
+    font-weight: 200;
+}
+
+#team-content {
+    padding-top: 40px
+}
+
+#team1 {
+	background-image: url(../images/team/man-1.jpg)
+}
+
+#team2 {
+	background-image: url(../images/team/man-2.jpg)
+}
+
+#team3 {
+	background-image: url(../images/team/woman-1.jpg)
+}
+
+#team1, #team2, #team3 {
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	background-position: right;
+}
+
+#team2 {
+	background-position: left;
+}
+
+#team .box-img {
+	text-align: center;
+}
+
+#team p {
+	font-style: normal;
+}
+
+#team div.desc-team {
+	height: 100px;
+	z-index: 5;
+}
+
+#team-icons {
+    padding-top: 10px;
+	background-position: center;
+}
+
+.team-icon {
+    font-size: 1em;
+    background: #222222;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    padding: 0px;
+    display: table-cell;
+}
+
+.team-icon:hover {
+    background-color: #0ed8d6;
+}
+
+#team a {
+    text-decoration: none;
+}
+
+#team article {
+	text-align: center;
+	padding-top: 40px;
+}
+
+/* Contact section styles */
+
+#contact {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/footer/world-map.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+	position: relative;
+}
+
+#contact .form {
+    padding-top: 50px;
+    display:inline-block;
+}
+
+#contact .container {
+    text-align: center;
+}
+
+#contact h2 span {
+    color: #fff;
+}
+
+#contact h4 {
+    color: #fff;
+    font-style: italic;
+	font-family: Droid Serif, serif;
+    font-weight: 200;
+}
+
+#contact form p input.data, textarea.data {
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+}
+
+textarea.data {
+    height: 153px;
+}
+
+#contact form p input:focus, textarea:focus {
+	border: 2px #0ed8d6 solid;
+}
+
+textarea.data, input.data {
+    color: darkgray;
+}
+
+#button-contact {
+    border: none;
+    border-radius: 5px;
+}
+
+/* Footer styles */
+
+#footer {
+	padding-top: 0px;
+    padding-bottom: 0px;
+    transform: translateY(65%);
+}
+
+#footer .navbar-default {
+    background: transparent;
+    border: transparent;
+}
+
+#footer-icons a i {
+    font-size: 1em;
+    background: #222222;
+    color: #fff;
+    height: 5px;
+    width: 5px;
+    padding: 15px;
+    line-height:5px;
+    vertical-align:middle;
+    display:inherit;
+    margin: 5px;
+}
+
+#footer-icons a {
+    text-decoration: none;
+}
+
+#footer-icons a i:hover {
+    background-color: #0ed8d6;
+}
+
+.footer-section {
+    text-align: center;
+    padding: 10px;
+}
+
+.footer-section nav ul li a {
+    padding-top : 0;
 }
